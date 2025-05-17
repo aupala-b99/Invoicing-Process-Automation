@@ -76,10 +76,10 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 
 - `Orders.xlsx` — Sample order data  
 - `InvoiceTemplate.docx` — Invoice with dynamic placeholders  
-- `Order-to-Cash.pdf` — Original business process  
+- `Order-to-Cash.pdf` — Original business process - Lucidchart process flow 
 - `Main.xaml` — UiPath automation script  
 - `ProcessMiningScreens/` — Screenshots from Celonis  
-- `lucidchart-process-map.png` — Lucidchart process flow
+
 
 ---
 
