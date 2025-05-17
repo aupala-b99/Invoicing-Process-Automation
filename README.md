@@ -1,88 +1,95 @@
 # 🚀 BoltInvoices – Automating Invoicing in the Order-to-Cash Cycle
 
-This project showcases how we applied **process mining** using Celonis, **process mapping** using Lucidchart, and **automation** using UiPath to optimize the invoicing step in the Order-to-Cash cycle at Bolt Socks.
+This project highlights how I used **process mining** (Celonis), **process mapping** (Lucidchart), and **RPA** (UiPath) to streamline and automate the invoicing step in the Order-to-Cash process for Bolt Socks.
 
-> 📉 We identified that invoice creation lagged >1 day after delivery confirmations—leading to delays in cash flow. Using UiPath, we fully automated invoice generation and dispatch, saving hours of manual work and improving the hit rate against the 23-day throughput target.
+> 📉 I discovered that invoice creation was often delayed by more than a day after delivery confirmation. By automating this step using UiPath, I eliminated the delay, saved manual effort, and improved the overall throughput performance of the process.
 
 ---
 
 ## 🔍 Problem Statement
 
-- **Current Challenge:** Invoices were being created manually, sometimes >1 day after delivery confirmation.
-- **Impact:** Bottlenecks in cash collection, low target throughput hit rate (49%), delayed revenue realization.
+- **Issue Identified:** Manual invoice creation often occurred >1 day after delivery confirmation.
+- **Impact:** Delayed cash flow, lower throughput target achievement, and increased administrative burden.
+- **Opportunity:** Automate invoice generation and dispatch once delivery confirmation is received.
 
 ---
 
-## 🔬 Process Discovery
+## 🔬 Process Discovery with Celonis
 
-Using **Celonis Business Miner**, we analyzed over 5,000 cases from the Order-to-Cash cycle:
+Using **Celonis Business Miner**, I analyzed over 5,000 Order-to-Cash cases. Key findings:
 
-- ⏱️ **Median Throughput Time:** 23.6 days (Target: 23)
-- 🎯 **Target Hit Rate:** 49%
-- ⚠️ Bottleneck detected between **Confirmed Delivery** and **Invoice Creation**
+- ⏱️ **Median Throughput Time:** 23.6 days  
+- 🎯 **Target Throughput:** 23 days  
+- ⚠️ **Target Hit Rate:** 49%  
 
-> Visuals from Celonis:
+> The delay between **"Confirmed Delivery"** and **"Invoice Created"** emerged as a key bottleneck.
+
+### Visual Insights:
 - ![Throughput Time](ProcessMiningScreens/throughput-time.png)
 - ![Process Flow](ProcessMiningScreens/process-explorer.png)
-- ![Activities Overview](ProcessMiningScreens/activity-overview.png)
+- ![Activity Frequency](ProcessMiningScreens/activity-overview.png)
 
 ---
 
-## 🗺️ Lucidchart Mapping
+## 🗺️ Mapping with Lucidchart
 
-Mapped the O2C process to visualize human touchpoints and identify automation candidates.
+I used **Lucidchart** to map out the full Order-to-Cash process, identifying automation points and separating human vs. system activities.
 
 ![Lucidchart Process Map](Diagrams/lucidchart-process-map.png)
 
 ---
 
-## 🤖 UiPath Automation: "BoltInvoices"
+## 🤖 UiPath RPA Project: "BoltInvoices"
 
-We built an RPA solution to generate and email invoices as soon as a delivery confirmation is received.
+I built a UiPath bot to automatically generate and email invoices as soon as a delivery confirmation email is received in Outlook.
 
-### 🔁 Workflow Summary
+### 🧠 Bot Logic
 
-1. Read `Orders.xlsx`
+1. Open `Orders.xlsx`
 2. Connect to Outlook 365
-3. Check for unread emails
-4. If delivery confirmation is found:
-   - Fill out `InvoiceTemplate.docx` with:
+3. Check for unread emails from `cody.baldwin@wisc.edu`
+4. If a confirmation is found:
+   - Fill the invoice template with:
      - Order info
-     - Current date
+     - Today’s date
      - Due date (+30 days)
-     - Amount due
-   - Save as PDF in `InvoiceFiles/`
+     - Amount from order file
+   - Save invoice as PDF (filename includes Order ID)
    - Email invoice PDF to customer
-   - Move email to “RPA” folder
-   - Log processed order
+   - Move email to “RPA” folder and mark it as read
+   - Log processed order using `Write Line`
 
-### 🛠 Tools Used
+---
+
+## 🛠 Tools & Technologies
 
 - UiPath Studio
 - Outlook 365 Activities
-- Word & Excel Automation
+- Excel + Word Automation
 - File System Automation
-- Email Filtering & Logging
+- Celonis Business Miner
+- Lucidchart for process visualization
 
 ---
 
-## 📦 Files Included
+## 📁 Repository Contents
 
-- `Orders.xlsx` — Sample order data
-- `InvoiceTemplate.docx` — Dynamic template for invoice creation
-- `Order-to-Cash.pdf` — Original business process flow
-- `Main.xaml` — UiPath automation script
-- `ProcessMiningScreens/` — Screenshots from Celonis dashboard
-- `lucidchart-process-map.png` — Process map for handoffs and automation scope
+- `Orders.xlsx` — Sample order data  
+- `InvoiceTemplate.docx` — Invoice with dynamic placeholders  
+- `Order-to-Cash.pdf` — Original business process  
+- `Main.xaml` — UiPath automation script  
+- `ProcessMiningScreens/` — Screenshots from Celonis  
+- `lucidchart-process-map.png` — Lucidchart process flow
+
+---
+
+## ✅ Outcome
+
+- Reduced invoice creation time from 1 day to **real-time**
+- Improved target throughput compliance
+- Fully automated, error-free invoice generation and dispatch
+- Easier tracking with centralized PDF storage and logging
 
 ---
 
-## 💡 Outcomes
-
-- ⏱️ Reduced invoice creation delay from 1 day to near real-time
-- 📈 Increased throughput hit rate
-- 📬 Achieved auto-emailing with proof of delivery
-- 📁 Clean audit trail and storage of all generated invoices
-
----
 
