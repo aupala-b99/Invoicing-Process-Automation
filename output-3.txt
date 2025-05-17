@@ -1,0 +1,14 @@
+02/21/2025 22:46:17 => [Debug] Execution started for file: Main
+02/21/2025 22:46:17 => [Info] Bolt Invoices1 execution started
+02/21/2025 22:46:18 => [Info] Audit: Using Excel File: C:\Users\rahul\OneDrive\Documents\UiPath\Bolt Invoices1\Orders.xlsx
+02/21/2025 22:46:18 => [Info] Audit: Using Gmail. Account: aupala.b@gmail.com
+02/21/2025 22:46:29 => [Info] Audit: Using Word. Document: C:\Users\rahul\OneDrive\Documents\UiPath\Bolt Invoices1\InvoiceTemplate.docx
+02/21/2025 22:46:38 => [Info] Audit: Send Gmail Mail. To: aupala.b@gmail.com CC:  Draft: False
+02/21/2025 22:46:41 => [Debug] Invoice sent success fully for order # 342539
+02/21/2025 22:46:42 => [Info] Audit: Using Word. Document: C:\Users\rahul\OneDrive\Documents\UiPath\Bolt Invoices1\InvoiceTemplate.docx
+02/21/2025 22:46:49 => [Info] Audit: Send Gmail Mail. To: aupala.b@gmail.com CC:  Draft: False
+02/21/2025 22:46:52 => [Debug] Invoice sent success fully for order # 342534
+02/21/2025 22:46:53 => [Info] Audit: Using Word. Document: C:\Users\rahul\OneDrive\Documents\UiPath\Bolt Invoices1\InvoiceTemplate.docx
+02/21/2025 22:46:58 => [Info] Audit: Send Gmail Mail. To: aupala.b@gmail.com CC:  Draft: False
+02/21/2025 22:47:01 => [Debug] Invoice sent success fully for order # 342537
+02/21/2025 22:47:05 => [Info] Bolt Invoices1 execution ended in: 00:00:47
