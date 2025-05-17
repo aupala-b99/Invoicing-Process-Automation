@@ -35,7 +35,7 @@ Using **Celonis Business Miner**, I analyzed over 5,000 Order-to-Cash cases. Key
 
 I used **Lucidchart** to map out the full Order-to-Cash process, identifying automation points and separating human vs. system activities.
 
-![Lucidchart Process Map](Order-to-Cash.pdf)
+![Lucidchart Process Map](Order%20to%20Cash.pdf)
 
 ---
 
