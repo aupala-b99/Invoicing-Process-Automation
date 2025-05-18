@@ -25,9 +25,9 @@ Using **Celonis Business Miner**, I analyzed over 5,000 Order-to-Cash cases. Key
 > The delay between **"Confirmed Delivery"** and **"Invoice Created"** emerged as a key bottleneck.
 
 ### Visual Insights:
-- ![Throughput Time](ProcessMiningScreens/throughput-time.png)
-- ![Process Flow](ProcessMiningScreens/process-explorer.png)
-- ![Activity Frequency](ProcessMiningScreens/activity-overview.png)
+- ![Throughput Time](SS2.png)
+- ![Process Flow](SS3.png)
+- ![Activity Frequency](SS1.png)
 
 ---
 
@@ -60,7 +60,7 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
    
    - Save invoice as PDF (filename includes Order ID)
    - Email invoice PDF to customer
-     [Email](./Screenshot%202025-02-21%20225007.jpg)
+     ![Email](./Screenshot%202025-02-21%20225007.jpg)
    - Move email to “RPA” folder and mark it as read
    - Log processed order using `Write Line`    
      [Output](./output-3.txt)
@@ -80,12 +80,12 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 
 ## 📁 Repository Contents
 
-- `Orders.xlsx` — Sample order data
-- `Delivery Confirmation Email` - Sample email for Delivery Confirmation  
-- `InvoiceTemplate.docx` — Invoice with dynamic placeholders  
-- `Order-to-Cash.pdf` — Original business process - Lucidchart process flow 
-- `Main.xaml` — UiPath automation script  
-- `ProcessMiningScreens/` — Screenshots from Celonis  
+- [Orders.xlsx](./Orders.xlsx) — Sample order data
+- ![Delivery Conf](./Delivery_Confirmation.png) - Sample email for Delivery Confirmation  
+- ![Invoice_template](./Invoice%20template.png) — Invoice with dynamic placeholders  
+- [Lucidchart Process Map](Order%20to%20Cash.pdf) — Original business process - Lucidchart process flow 
+- [Script](./Main.xaml) — UiPath automation script  
+- Screenshots from Celonis  
 
 
 ---
