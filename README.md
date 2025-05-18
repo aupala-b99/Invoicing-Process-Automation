@@ -29,7 +29,7 @@ Using **Celonis Business Miner**, I analyzed over 5,000 Order-to-Cash cases. Key
  
  ![Process Flow](SS3.png)
  
-![Activity Frequency](SS1.png)
+ ![Activity Frequency](SS1.png)
 
 ---
 
@@ -83,8 +83,8 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 ## 📁 Repository Contents
 
 - [Orders.xlsx](./Orders.xlsx) — Sample order data
-- ![Delivery Conf](./Delivery_Confirmation.png) - Sample email for Delivery Confirmation  
-- ![Invoice_template](./Invoice%20template.png) — Invoice with dynamic placeholders  
+- [Delivery Conf](./Delivery_Confirmation.png) - Sample email for Delivery Confirmation  
+- [Invoice_template](./Invoice%20template.png) — Invoice with dynamic placeholders  
 - [Lucidchart Process Map](Order%20to%20Cash.pdf) — Original business process - Lucidchart process flow 
 - [Script](./Main.xaml) — UiPath automation script  
 - Screenshots from Celonis  
