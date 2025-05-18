@@ -25,9 +25,11 @@ Using **Celonis Business Miner**, I analyzed over 5,000 Order-to-Cash cases. Key
 > The delay between **"Confirmed Delivery"** and **"Invoice Created"** emerged as a key bottleneck.
 
 ### Visual Insights:
-- ![Throughput Time](SS2.png)
-- ![Process Flow](SS3.png)
-- ![Activity Frequency](SS1.png)
+ ![Throughput Time](SS2.png)
+ 
+ ![Process Flow](SS3.png)
+ 
+![Activity Frequency](SS1.png)
 
 ---
 
