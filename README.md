@@ -48,18 +48,22 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 1. Open [Orders.xlsx](./Orders.xlsx)
 2. Connect to Outlook 365
 3. Check for unread emails
+   ![Delivery Conf](./Delivery_Confirmation.png)
 4. If a confirmation is found:
    - Fill the invoice template with:
      - Order info
      - Today’s date
      - Due date (+30 days)
      - Amount from order file
+       
+   ![Invoice_template](./Invoice%20template.png)
+   
    - Save invoice as PDF (filename includes Order ID)
    - Email invoice PDF to customer
+     [Email](./Screenshot%202025-02-21%20225007.jpg)
    - Move email to “RPA” folder and mark it as read
-   - Log processed order using `Write Line`
-     
-[Output](./output-3.txt)
+   - Log processed order using `Write Line`    
+     [Output](./output-3.txt)
 
 ---
 
