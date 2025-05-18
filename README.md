@@ -58,6 +58,7 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
    - Email invoice PDF to customer
    - Move email to “RPA” folder and mark it as read
    - Log processed order using `Write Line`
+[](./output-3.txt)
 
 ---
 
@@ -74,7 +75,8 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 
 ## 📁 Repository Contents
 
-- `Orders.xlsx` — Sample order data  
+- `Orders.xlsx` — Sample order data
+- `Delivery Confirmation Email` - Sample email for Delivery Confirmation  
 - `InvoiceTemplate.docx` — Invoice with dynamic placeholders  
 - `Order-to-Cash.pdf` — Original business process - Lucidchart process flow 
 - `Main.xaml` — UiPath automation script  
