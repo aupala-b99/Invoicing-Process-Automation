@@ -45,9 +45,9 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
 
 ### 🧠 Bot Logic
 
-1. Open `Orders.xlsx`
+1. Open [Orders.xlsx](./Orders.xlsx)
 2. Connect to Outlook 365
-3. Check for unread emails from `cody.baldwin@wisc.edu`
+3. Check for unread emails
 4. If a confirmation is found:
    - Fill the invoice template with:
      - Order info
