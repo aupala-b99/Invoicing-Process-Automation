@@ -58,7 +58,8 @@ I built a UiPath bot to automatically generate and email invoices as soon as a d
    - Email invoice PDF to customer
    - Move email to “RPA” folder and mark it as read
    - Log processed order using `Write Line`
-![Output](./output-3.txt)
+     
+[Output](./output-3.txt)
 
 ---
 
